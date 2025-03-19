@@ -348,34 +348,41 @@
                                 you have to choose here and enjoy huge discount you can get.
                             </p>
 
-                            <form action="{{route('registers')}}" post="post">
+                            <form action="{{route('registers')}}" method="post">
                                 @csrf
 
                                 <div class="grid grid-cols-12 gap-x-[20px] gap-y-[35px]">
+                                <div class="col-span-12">
+                                        <input
+                                            class="font-light w-full sm:w-[400px] leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-primary border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)]"
+                                            type="text" name="sponsor"
+                                            placeholder="Usename" />
+                                    </div>
                                     <div class="col-span-12">
                                         <input
                                             class="font-light w-full sm:w-[400px] leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-primary border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)]"
                                             type="text" name="name"
                                             placeholder="Name" />
                                     </div>
-                                    <div class="col-span-12">
-                                        <input
-                                            class="font-light w-full sm:w-[400px] leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-primary border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)]"
-                                            type="text" name="sponsor"
-                                            placeholder="Usename" />
-                                    </div>
+                                    
 
                                     <div class="col-span-12">
                                         <input
                                             class="font-light w-full sm:w-[400px] leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-primary border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)]"
-                                            type="email"
+                                            type="email" name="email"
                                             placeholder="Email" />
                                     </div>
+                                    <div class="col-span-12">
+                                        <input
+                                            class="font-light w-full sm:w-[400px] leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-primary border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)]"
+                                            type="number" name="phone"
+                                            placeholder="Phone no." />
+                                    </div>
 
                                     <div class="col-span-12">
                                         <input
                                             class="font-light w-full sm:w-[400px] leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-primary border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)]"
-                                            type="password"
+                                            type="password" name="password"
                                             placeholder="Password" />
                                     </div>
 
